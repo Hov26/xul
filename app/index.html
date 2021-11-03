@@ -23,8 +23,8 @@
         <div class="enter-term">
             <div class="monthly">
                 <p class="term fz18 fwb ws">Monthly</p>
-                <button class="check">
-                    <div class="circle checked"></div>
+                <button class="switcher" aria-label='price switcher button'>
+                    <div class="circle"></div>
                 </button>
             </div>
             <div class="yearly">
@@ -48,10 +48,8 @@
                         Self-hosted forms
                         Email templates
                         One user seat
-                        <span class="line-through">
-                            Add additional users Add-ons
-                        </span> 
                     </p>
+                    <p class="line-through card-descr fz20 c-black ws">Add additional users Add-ons</p>
                 </div>
                 <div class="pricing-card with-bg bg-gray300">
                     <p class="card-title fz24 fwb c-black100 geo">Pro</p>
@@ -91,8 +89,10 @@
                     platform with an unlimited number of deals.
                 </p>
                 <p class="sign-up-subtitle fz18 ws">No commitment or credit cards required.</p>
-                <input type="text" name="email" class="sign-up-email btn" placeholder="Enter your email address">
-                <button class="btn blue signup">START FREE 14-DAY TRIAL</button>
+                <div class="input-btn-wrapper">
+                    <input type="text" name="email" class="email-input btn" placeholder="Enter your email address">
+                    <button class="btn blue signup">START FREE 14-DAY TRIAL</button>
+                </div>
             </div>
         </div>
     </section>
