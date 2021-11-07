@@ -1,10 +1,24 @@
 $(document).ready(function() {
 
-    $('.circle').click(function() {
-      if($('.circle').hasClass('cheked')) {
-        $('.circle').removeClass('cheked')
-      } else {
-        $('.circle').addClass('cheked')
-      }
-    })  
+  $(window).scroll(function() {
+    // Show service slider black content
+    if (($(this).scrollTop()) > 10) {
+      $('.header').addClass('with-bg')
+    } else {
+      $('.header').removeClass('with-bg')
+    }
+  });
+
+
+  // $('.burger').click(function(){
+  //   if($('.mobile-menu-opened').hasClass('opened')) {
+  //     $('.mobile-menu').removeClass('opened')
+  //   } else {
+  //     $('.mobile').addClass('opened')
+  //   }
+  // })  
+
+  // $('.close').click(function(){
+  //   $('.mobile-menu').removeClass('opened')
+  // })
 });

@@ -1,65 +1,64 @@
 .footer
     width: 100%
+    padding: 30px 0 80px 0
     .container
         width: 90%
         margin: 0 auto
     .footer-top
         display: flex
         justify-content: space-between
-        padding: 33px 0 68px 0
+        padding: 0 0 68px 0
         .footer-left-content
             max-width: 505px
         .footer-descr
             padding: 30px 0 39px 0
         .address
             font-style: normal
-        .footer-ul
+        .footer-nav-ul
             display: flex
             justify-content: flex-end
-            margin-bottom: 30px
-            .footer-li
-                margin-left: 30px
-        .footer-links
-            display: flex
-            margin-left: auto
             align-items: center
-            .footer-links-read
-                margin-right: 29px
-            .footer-logo-link-item
-                height: 24px
-                margin-left: 20px
+            margin-bottom: 30px
+            gap: 30px
+            min-height: 42px
+        .reviews-wrapper
+            display: flex
+            align-items: center
+            justify-content: flex-end
+        .reviews-p
+            padding-right: 8px
+        .reviews-ul
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            gap: 20px
+        .reviews-logo
+            height: 24px
     .footer-bottom
         display: flex
         justify-content: space-between
         align-items: center
-        padding-bottom: 99px
-        .footer-social
+        .terms-social-wrapper
             display: flex
             align-items: center
-            .social-items
+            .social-ul
                 display: flex
                 align-items: center
-            .social-item
+                gap: 40px
+            .social-li
                 cursor: pointer
-            .social-item:not(:first-child)
-                margin-left: 40px
-            .social-service
-                margin-right: 36px
-            .social-policy
-                margin-right: 70px
-            .social-service, .social-policy
-                text-decoration: underline
+                
 @media screen and ( max-width: 1440px )
     .footer
         .footer-top
             .footer-descr
                 padding: 30px 0 25px 0
         .footer-bottom
-            .footer-social
-                .social-service
-                    margin-right: 23px
+            .terms-social-wrapper
+                gap: 20px
                 .social-policy
                     margin-right: 34px
+
 @media screen and ( max-width: 1100px )
     .footer
         .footer-top
@@ -73,33 +72,32 @@
             .footer-right-content
                 width: 100%
                 padding: 55px 0 0 0
-                .footer-ul
+                .footer-nav-ul
                     justify-content: center
                     margin-bottom: 0
-                .footer-li:first-child
+                .footer-nav-li:first-child
                     margin-left: 0
-                .footer-links-read
+                .reviews-wrapper
+                    flex-direction: column
+                    margin-top: 60px
+                .reviews-p
                     width: 100%
                     text-align: center
-                    margin-bottom: 23px
-                    margin-right: 0
-                .footer-links
+                    margin: 0
+                    margin-bottom: 22px
+                .reviews-ul
                     flex-wrap: wrap
                     justify-content: center
-                    padding: 57px 0 64px 0
-                    .footer-logo-link-item:not(:last-child)
-                        margin-left: 0
+                    padding: 0 0 60px 0
         .footer-bottom
             flex-direction: column-reverse
             padding-bottom: 22px
-            .footer-social
+            .terms-social-wrapper
                 flex-direction: column-reverse
             .social-links
                 text-align: center
-            .social-items
+            .social-ul
                 margin-bottom: 43px
-            .footer-social-links
-                margin-bottom: 72px
             
 
 

@@ -12,12 +12,21 @@
     justify-content: flex-start
     align-items: center
     .success
-        margin: 0 auto
+        margin-left: 220px
         max-width: 611px
     .success-reports
         padding: 31px 0 36px 0
         .success-report:not(:last-child)
             margin-bottom: 32px
+    .success-report
+        position: relative
+        padding-left: 28px
+        &:before
+            content: url('../../images/icon-done.svg')
+            display: inline-block
+            position: absolute
+            top: 2px
+            left: 0
 .product-sign-up
     padding: 101px 0 150px 0
     .container
@@ -32,3 +41,51 @@
         margin: 0 auto
     .product-start-free
         margin-top: 42px
+@media screen and ( max-width: 1600px )
+    .products
+        padding: 58px 0 34px 0
+        .products-title
+            font-size: 36px
+        .products-subtitle
+            font-size: 18px
+    .analytics
+        padding: 110px 0 130px 0
+        .success
+            max-width: 500px
+            margin-left: 100px
+            .success-title
+                font-size: 36px
+            .success-descr
+                font-size: 18px
+        .analytics-review
+            max-width: 612px
+@media screen and ( max-width: 1190px )
+    .products
+        padding: 47px 0 44px 0  
+        .products-title
+            font-size: 30px  
+            margin-bottom: 33px
+        .products-subtitle
+            font-size: 16px
+    .analytics
+        padding: 40px 0 65px 0
+        flex-direction: column
+        align-items: flex-start
+        .analytics-review
+            margin-bottom: 22px
+            width: 95%
+        .success
+            margin: 0 auto
+            padding: 0 27px 0 27px
+        .success-title
+            font-size: 30px
+        .success-report
+            font-size: 20px
+        .success-descr
+            font-size: 16px
+.product-sign-up
+    padding: 36px 0 80px 0
+    .container
+        padding: 50px 24px
+    .sign-up-title
+        font-size: 24px
