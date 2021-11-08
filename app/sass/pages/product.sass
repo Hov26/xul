@@ -1,5 +1,5 @@
 .products
-    padding: 48px 0 18px 0
+    padding: 48px
     width: 100%
     .container
         margin: 0 auto
@@ -7,6 +7,28 @@
         max-width: 828px
     .products-title
         margin-bottom: 27px
+.generate
+    display: flex
+    align-items: center
+    .left-content
+        position: relative
+        left: 0
+        width: 48%
+    .create-form-bg
+        width: 100%
+        max-width: 900px
+    .create-form
+        position: absolute
+        left: -20px
+        top: 150px
+        max-width: 800px
+    .right-content
+        margin-left: 90px
+        max-width: 500px
+        .generate-title
+            margin-bottom: 31px
+        .right-content-descr
+            margin-top: 40px
 .analytics
     padding: 78px 0 58px 0
     display: flex
@@ -19,15 +41,15 @@
         padding: 31px 0 36px 0
         .success-report:not(:last-child)
             margin-bottom: 32px
-    .success-report
-        position: relative
-        padding-left: 28px
-        &:before
-            content: url('../../images/icon-done.svg')
-            display: inline-block
-            position: absolute
-            top: 2px
-            left: 0
+.success-report
+    position: relative
+    padding-left: 28px
+    &:before
+        content: url('../../images/icon-done.svg')
+        display: inline-block
+        position: absolute
+        top: 2px
+        left: 0
 .product-sign-up
     padding: 100px 0 150px 0
     .sign-up-card
