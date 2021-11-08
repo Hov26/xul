@@ -26,4 +26,5 @@ $(document).ready(function() {
   $('.close-btn').click(function(){
     $('.mobile-menu').removeClass('opened')
   })
+  
 });
