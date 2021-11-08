@@ -12,46 +12,49 @@
         margin: 0 auto
         padding: 73px 0 50px 0
         gap: 30px
-        .switcher
-            width: 96px
-            height: 50px
-            border-radius: 25px
-            border: none
-            padding: 0 4px
-            background-image: linear-gradient(to left bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
-            &.active .circle
-                transform: translateX(28px)
-        .circle
-            width: 38px
-            height: 38px
-            border-radius: 50%
-            background-color: $white
-            transition: all 0.2s linear
-        .monthly
-            display: flex
-            justify-content: flex-end
-            align-items: center
-            .term
-                margin-right: 31px
-        .yearly
-            display: flex
-            justify-content: flex-start
-            align-items: center
-            .term
-                margin-right: 19px
-        .sale
-            padding: 15px
+    .switcher
+        cursor: pointer
+        width: 96px
+        height: 50px
+        border-radius: 25px
+        border: none
+        padding: 0 6px
+        background-image: linear-gradient(to left bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
+        &.active .circle
+            transform: translateX(47px)
+    .circle
+        width: 38px
+        height: 38px
+        border-radius: 50%
+        background-color: $white
+        transition: all 0.1s linear
+    .monthly
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        .term
+            margin-right: 31px
+    .yearly
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        .term
+            margin-right: 19px
+    .sale
+        padding: 15px
 
     .pricing-cards
-        .container
-            display: flex
-            justify-content: center
-            gap: 29px
+        display: flex
+        justify-content: center
+        gap: 30px
         .pricing-card
-            width: 32%
+            width: 100%
             max-width: 372px
             border-radius: 24px
-            padding: 50px 0 45px 0
+            padding: 50px 20px
+            &.enterprise
+                .card-price
+                    padding: 16px 0 0px 0
         .with-bg
             background-image: linear-gradient(to left bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
             .card-title, .card-price, .card-subtitle, .card-descr
@@ -82,6 +85,23 @@
 .sign-up
     padding-bottom: 301px
     width: 100%
+    position: relative
+    overflow: hidden
+    .square
+        background-color: $gray
+        border-radius: 32px
+        position: absolute
+        z-index: -1
+        &.square-1
+            height: 217px
+            width: 166px
+            bottom: 30%
+            left: 10%
+        &.square-2
+            height: 217px
+            width: 271px
+            bottom: 15%
+            right: 10%
     .sign-up-title
         text-align: center
         margin-bottom: 35px
@@ -89,7 +109,7 @@
         text-align: center
         margin-bottom: 28px
     .container
-        margin: 0 auto 
+        margin: 0 auto
         max-width: 1276px
     .input-btn-wrapper
         width: 100%
@@ -108,7 +128,8 @@
     .btn
         width: 100%
         margin-top: 16px
-@media screen and ( max-width:1440px)
+
+@media only screen and (max-width: 1440px)
     .pricing
         padding: 58px 0 223px 0
         .pricing-title
@@ -120,12 +141,15 @@
         .enter-term
             padding: 83px 0 62px 0
             gap: 35px
-            .switcher
-                width: 56px
-                height: 28px
-            .circle
-                width: 22px
-                height: 22px
+        .switcher
+            width: 56px
+            height: 28px
+            padding: 0 4px
+            &.active .circle
+                transform: translateX(26px)
+        .circle
+            width: 22px
+            height: 22px
         .monthly
             .term
                 margin-right: 35px
@@ -136,14 +160,16 @@
             margin-bottom: 43px
         .sign-up-subtitle
             font-size: 18px
+        .square-1
+            bottom: 20%
+        .square-2
+            bottom: 6%
 
-
-@media screen and ( max-width:992px )
+@media screen and (max-width: 1023px)
     .pricing
         padding: 47px 0 117px 0
     .container
         width: 100%
-        padding: 0 24px
         .pricing-title
             font-size: 30px
             margin-bottom: 33px
@@ -152,13 +178,16 @@
         .enter-term
             align-items: baseline
             padding: 40px 0 30px 0
-            gap: 24px 
+            gap: 24px
             .switcher
                 width: 96px
                 height: 50px
+                padding: 0 8px
+                &.active .circle
+                    transform: translateX(43px)
             .circle
                 width: 38px
-                height: 38px   
+                height: 38px
             .monthly
                 .term
                     margin-right: 24px
@@ -167,18 +196,14 @@
                 .term
                     margin: 0 0 16px 0
         .pricing-cards
-            .container
+            flex-direction: column
+            align-items: center
+            .pricing-card
                 width: 100%
-                display: flex
-                align-items: center
-                flex-direction: column
-                gap: 24px
-                .pricing-card
-                    width: 100%
-                    width: 327px
-                    padding: 45px 0 32px 0
-                    .card-free-btn
-                        max-width: 221px
+                width: 327px
+                padding: 45px 0 32px 0
+            .card-free-btn
+                max-width: 221px
     .sign-up
         padding-bottom: 80px
         .sign-up-title
@@ -186,5 +211,5 @@
             margin-bottom: 35px
         .sign-up-subtitle
             font-size: 16px
-        .input-btn-wrapper
-            max-width: 300px
+        .square
+            display: none
