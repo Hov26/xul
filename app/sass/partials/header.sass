@@ -18,7 +18,7 @@
         text-align: center
         margin-left: auto
         .nav-ul
-             display: flex
+            display: flex
         .nav-li
             text-transform: uppercase
             margin-right: 50px
@@ -28,7 +28,7 @@
     .mobile-nav
         text-transform: uppercase
     .header-login
-        border-left: 1px solid $gray200 
+        border-left: 1px solid $gray200
         .login
             padding: 0 73px 0 50px
     .burger
@@ -64,35 +64,42 @@
             display: block
             margin-right: 16px
 
-    // mobile menu
-    .mobile-menu
-        height: 100vh
-        overflow: hideen
-        width: 100%
-        background-image: linear-gradient(to bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
-        position: fixed
-        top: 0
-        left: 0
-        .mobile-menu-wrapper
-            text-align: center
-            padding: 105px 0 140px 0
-        .mobile-li-open:not(:last-child)
-            margin-bottom: 51px
-        .mobile-login-open
-            display: flex
-            flex-direction: column
-            align-items: center
-        .signup
+        // mobile menu
+        .mobile-menu
+            display: block
+            transform: translateX(-100%)
+            // overflow: hideen
             width: 100%
-            max-width: 300px
-            margin-bottom: 14px
-            margin-top: 140px
-        .mobile-close
-            display: flex
-            align-items: center
-            height: 80px
-            padding: 0 0 0 21px
-        .mobile-button-close
-            font-size: 22px
-            margin-right: 21px
-        
+            background-image: linear-gradient(to bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
+            position: fixed
+            z-index: 100
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            transition: all 0.2s ease
+            display: block
+            &.opened
+                transform: translateX(0)
+            .mobile-menu-wrapper
+                text-align: center
+                padding: 105px 0 140px 0
+            .mobile-li-open:not(:last-child)
+                margin-bottom: 51px
+            .mobile-login-open
+                display: flex
+                flex-direction: column
+                align-items: center
+            .signup
+                width: 100%
+                max-width: 300px
+                margin-bottom: 14px
+                margin-top: 140px
+            .mobile-close
+                display: flex
+                align-items: center
+                height: 80px
+                padding: 0 0 0 21px
+            .mobile-button-close
+                font-size: 22px
+                margin-right: 21px

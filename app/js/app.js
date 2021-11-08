@@ -9,14 +9,23 @@ $(document).ready(function() {
     }
   });
 
+  $('.switcher').click(function(){
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active')
+    } else {
+      $(this).addClass('active')
+    }
+  })
 
-  // $('.burger').click(function(){
-  //   if($('.mobile-menu-opened').hasClass('opened')) {
-  //     $('.mobile-menu').removeClass('opened')
-  //   } else {
-  //     $('.mobile').addClass('opened')
-  //   }
-  // })  
+
+  $('.burger').click(function(){
+    $('.mobile-menu').addClass('opened')
+    // if($('.mobile-menu-opened').hasClass('opened')) {
+    //   $('.mobile-menu').removeClass('opened')
+    // } else {
+    //   $('.mobile').addClass('opened')
+    // }
+  })  
 
   // $('.close').click(function(){
   //   $('.mobile-menu').removeClass('opened')
