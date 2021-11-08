@@ -14,7 +14,8 @@
     .left-content
         position: relative
         left: 0
-        width: 48%
+        top: 0
+        width: 49%
     .create-form-bg
         width: 100%
         max-width: 900px
@@ -23,24 +24,23 @@
         left: -20px
         top: 150px
         max-width: 800px
+        width: 100%
     .right-content
         max-width: 500px
-        .generate-title
-            margin-bottom: 31px
-        .right-content-descr
-            margin-top: 40px
+        .section-descr:not(:last-child)
+            margin-bottom: 30px
 .analytics
     padding: 78px 0 58px 0
     display: flex
     justify-content: flex-start
     align-items: center
-    .success
-        margin-left: 220px
-        max-width: 611px
-    .success-reports
-        padding: 31px 0 36px 0
-        .success-report:not(:last-child)
-            margin-bottom: 32px
+.success
+    margin-left: 220px
+    max-width: 611px
+.success-reports
+    padding: 31px 0 36px 0
+    .success-report:not(:last-child)
+        margin-bottom: 32px
 .success-report
     position: relative
     padding-left: 28px
@@ -68,45 +68,65 @@
 @media screen and ( max-width: 1600px )
     .products
         padding: 58px 0 34px 0
-        .products-title
-            font-size: 36px
-        .products-subtitle
-            font-size: 18px
+    .section-title
+        font-size: 36px
+    .generate
+        .create-form-bg
+            max-width: 620px
+        .create-form
+            max-width: 600px
+    .products-subtitle
+        font-size: 18px
     .analytics
         padding: 80px 0 60px 0
-        .success
-            max-width: 500px
-            margin-left: 100px
-            .success-title
-                font-size: 36px
-            .success-descr
-                font-size: 18px
+    .success
+        max-width: 500px
+        margin-left: 100px
+    .section-title
+        font-size: 36px
+    .section-descr
+        font-size: 18px
         .analytics-review
             max-width: 612px
 @media screen and ( max-width: 1190px )
     .products
         padding: 47px 0 44px 0
-        .products-title
-            font-size: 30px
-            margin-bottom: 33px
+    .section-title
+        font-size: 30px
+        margin-bottom: 33px
         .products-subtitle
             font-size: 16px
+    .generate
+        flex-direction: column
+        align-items: flex-start
+        gap: 30px
+        .left-content
+            width: 100%
+            padding: 0 24px 0 0
+        .right-content
+            margin: 0 auto
+            width: 100%
+            padding: 0 24px
+        .create-form
+            position: absolute
+            left: -20px
+            top: 50px
     .analytics
         padding: 25px 0 21px 0
         flex-direction: column
         align-items: flex-start
-        .analytics-review
-            margin-bottom: 22px
-            width: 100%
-        .success
-            margin: 0 auto
-            padding: 0 24px
-        .success-title
-            font-size: 30px
-        .success-report
-            font-size: 20px
-        .success-descr
-            font-size: 16px
+    .analytics-review
+        margin-bottom: 22px
+        width: 100%
+    .success
+        margin: 0 auto
+        padding: 0 24px
+    .section-title
+        font-size: 30px
+    .success-report
+        font-size: 20px
+    .section-descr
+        font-size: 16px
     .product-sign-up
         padding: 36px 0 80px 0
         .sign-up-card
