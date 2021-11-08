@@ -1,5 +1,16 @@
 @import "colors.sass"
 
+body
+    margin-top: 80px
+
+button
+    background: none
+    padding: 0
+
+.container
+    width: 95%
+    max-width: 1920px
+    margin: 0 auto
 .btn
     height: 48px
     display: inline-flex
@@ -8,6 +19,7 @@
     font-weight: 600
     border-radius: 12px
     font-family: 'Work Sans', sans-serif
+    border: none
     &.black
         background-color: $black100
         color: $white
@@ -15,7 +27,7 @@
         background-color: $white
         color: $blue100
     &.blue
-        background-color: $blue100
+        background-color: $blue400
         color: $white
 
     &.default
