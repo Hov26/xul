@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="28px" viewBox="0 0 72 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icons/logo@3x</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="CircularStd-Black, Circular Std" font-size="37" font-weight="800">
+        <g id="header-3" transform="translate(-59.000000, -35.000000)" fill="#292929">
+            <g id="XUL" transform="translate(60.000000, 24.000000)">
+                <text>
+                    <tspan x="-1" y="38">XUL</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

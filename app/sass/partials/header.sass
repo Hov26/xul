@@ -1,0 +1,98 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 10
+    width: 100%
+    transition: all 0.2s ease
+    &.with-bg
+        background-color: $white
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1)
+    .header-container
+        display: flex
+        align-items: center
+        padding: 0 60px
+        height: 100px
+        margin: 0 auto
+    .header-nav
+        text-align: center
+        margin-left: auto
+        .nav-ul
+             display: flex
+        .nav-li
+            text-transform: uppercase
+            margin-right: 50px
+            cursor: pointer
+    .mobile-nav, .mobile-login
+        display: none
+    .mobile-nav
+        text-transform: uppercase
+    .header-login
+        border-left: 1px solid $gray200 
+        .login
+            padding: 0 73px 0 50px
+    .burger
+        border: none
+        display: none
+    .burger div
+        border: none
+        height: 1px
+        width: 18px
+        margin: 5px
+        background-color: $black100
+    .closed
+        display: none
+    .mobile-menu
+        display: none
+
+@media screen and ( max-width: 1100px )
+    .header
+        .header-container
+            height: 80px
+            padding: 0 24px 0 16px
+        .header-nav
+            display: none
+        .header-login
+            display: none
+        .mobile-login, .mobile-nav
+            display: block
+        .mobile-login
+            margin-left: 24px
+        .mobile-nav
+            margin-left: auto
+        .burger
+            display: block
+            margin-right: 16px
+
+    // mobile menu
+    .mobile-menu
+        height: 100vh
+        overflow: hideen
+        width: 100%
+        background-image: linear-gradient(to bottom, #bc85ff, #a574fe, #8964fe, #6456fe, #1f49ff)
+        position: fixed
+        top: 0
+        left: 0
+        .mobile-menu-wrapper
+            text-align: center
+            padding: 105px 0 140px 0
+        .mobile-li-open:not(:last-child)
+            margin-bottom: 51px
+        .mobile-login-open
+            display: flex
+            flex-direction: column
+            align-items: center
+        .signup
+            width: 100%
+            max-width: 300px
+            margin-bottom: 14px
+            margin-top: 140px
+        .mobile-close
+            display: flex
+            align-items: center
+            height: 80px
+            padding: 0 0 0 21px
+        .mobile-button-close
+            font-size: 22px
+            margin-right: 21px
+        
