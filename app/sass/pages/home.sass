@@ -1,4 +1,6 @@
 .home
+    .title
+        margin-bottom: 22px
     .hero
         display: flex
         justify-content: flex-end
@@ -10,8 +12,6 @@
             margin-left: 40px
             @media only screen and (min-width: 2000px)
                 margin-right: 10vw
-        .title
-            margin-bottom: 22px
         .subtitle
             max-width: 472px
         .input-btn-wrapper
@@ -40,32 +40,119 @@
             width: 100%
             max-width: 1000px
 
+    .used-by
+        padding: 0 0 188px 0
+        text-align: center
+        .logos-container
+            margin: 62px 0 0 0
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            gap: 50px
+
+    .funnel
+        display: flex
+        align-items: center
+        padding-bottom: 132px
+        .content
+            width: 100%
+            max-width: 556px
+            margin: -200px 30px 0 60px
+            @media only screen and (min-width: 2000px)
+                margin-left: 15vw
+        .btn
+            margin-top: 24px
+        .ill-wrap
+            width: 55%
+            max-width: 1045px
+            position: relative
+            overflow: hidden
+        .bg
+            width: 100%
+        .ill
+            position: absolute
+            top: 15%
+            left: -80px
+            width: 107%
+            max-width: 1100px
+
+    .loyal
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding-bottom: 132px
+        .content
+            width: 100%
+            max-width: 648px
+            margin: 150px 10px 0 20px
+            @media only screen and (min-width: 2000px)
+                margin: 150px 10vw 0 20px
+        .subtitle
+            max-width: 560px
+        .btn
+            margin: 22px 0 28px 0
+        .ill-wrap
+            width: 94%
+            max-width: 992px
+            position: relative
+            overflow: hidden
+            display: flex
+            justify-content: flex-end
+        .bg
+            width: 100%
+            max-width: 800px
+        .ill
+            position: absolute
+            top: 30%
+            left: 0
+            width: 100%
+            max-width: 800px
+            &.mobile
+                display: none
+
 @media only screen and ( max-width: 1440px )
     .home
+        .title
+            font-size: 36px
+        .subtitle
+            font-size: 18px
         .hero
             .content
                 max-width: 500px
                 margin-bottom: 33px
-            .title
-                font-size: 36px
-            .subtitle
-                font-size: 18px
+            .ill-wrap
+                max-width: 800px
+
+        .loyal
+            .content
+                max-width: 500px
+            .ill-wrap
+                width: 50%
+                max-width: initial
+            .bg
+                max-width: 582px
+            .ill
+                max-width: 580px
+                left: initial
+                right: 19%
 
 @media only screen and ( max-width: 1180px )
     .home
+        .title
+            font-size: 30px
+        .subtitle
+            font-size: 16px
+        .content
+            padding: 0 24px
         .hero
             flex-direction: column
             .content
                 margin-left: 0
-                padding: 0 24px
                 text-align: center
                 display: flex
                 flex-direction: column
                 align-items: center
-            .title
-                font-size: 30px
-            .subtitle
-                font-size: 16px
             .ill-wrap
                 align-self: flex-end
             .ill
@@ -75,3 +162,51 @@
                     display: none
                 &.mobile
                     display: block
+
+        .funnel
+            flex-direction: column-reverse
+            padding-bottom: 24px
+            .content
+                margin: 0 auto 30px auto
+                text-align: center
+            .ill-wrap
+                width: 90%
+                align-self: flex-start
+            .ill
+                width: 113%
+
+        .loyal
+            flex-direction: column
+            padding-bottom: 60px
+            .content
+                text-align: center
+                margin: 0 auto
+            .ill-wrap
+                align-self: flex-end
+                width: 100%
+                max-width: initial
+            .bg
+                max-width: 90%
+            .ill
+                right: 6%
+                width: 80%
+                top: 18%
+                &.desktop
+                    display: none
+                &.mobile
+                    display: block
+
+@media only screen and ( max-width: 500px )
+    .home
+        .used-by
+            padding: 0 0 134px 0
+            .logos-container
+                gap: 16px
+                margin-top: 36px
+                .logo-figure
+                    width: 28%
+                    .logo
+                        width: 100%
+
+        .funnel
+            padding-bottom: 24px
