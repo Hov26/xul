@@ -111,6 +111,32 @@
             &.mobile
                 display: none
 
+    .degree
+        display: flex
+        align-items: center
+        padding-bottom: 212px
+        .content
+            width: 100%
+            max-width: 611px
+            margin: -100px 0 0 80px
+            @media only screen and (min-width: 2000px)
+                margin-left: 15vw
+        .btn
+            margin-top: 24px
+        .ill-wrap
+            width: 55%
+            max-width: 910px
+            position: relative
+            overflow: hidden
+        .bg
+            width: 100%
+        .ill
+            position: absolute
+            top: 3%
+            left: -80px
+            width: 107%
+            max-width: 980px
+
 @media only screen and ( max-width: 1440px )
     .home
         .title
@@ -137,6 +163,11 @@
                 left: initial
                 right: 19%
 
+        .degree
+            .content
+                max-width: 500px
+                margin-left: 40px
+
 @media only screen and ( max-width: 1180px )
     .home
         .title
@@ -145,11 +176,11 @@
             font-size: 16px
         .content
             padding: 0 24px
+            text-align: center
         .hero
             flex-direction: column
             .content
                 margin-left: 0
-                text-align: center
                 display: flex
                 flex-direction: column
                 align-items: center
@@ -168,7 +199,6 @@
             padding-bottom: 24px
             .content
                 margin: 0 auto 30px auto
-                text-align: center
             .ill-wrap
                 width: 90%
                 align-self: flex-start
@@ -179,14 +209,14 @@
             flex-direction: column
             padding-bottom: 60px
             .content
-                text-align: center
                 margin: 0 auto
             .ill-wrap
                 align-self: flex-end
                 width: 100%
                 max-width: initial
             .bg
-                max-width: 90%
+                width: 90%
+                max-width: 700px
             .ill
                 right: 6%
                 width: 80%
@@ -195,6 +225,18 @@
                     display: none
                 &.mobile
                     display: block
+
+        .degree
+            flex-direction: column-reverse
+            .ill-wrap
+                align-self: flex-start
+                width: 90%
+            .content
+                margin: 0 auto 24px auto
+            .ill
+                width: 100%
+                top: 6%
+                max-width: 850px
 
 @media only screen and ( max-width: 500px )
     .home
