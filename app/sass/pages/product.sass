@@ -32,6 +32,31 @@
             .section-descr:not(:last-child)
                 margin-bottom: 30px
 
+    .engage
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        position: relative
+        gap: 500px
+        top: -70px
+        .right-content
+            width: 50%
+            position: relative
+            max-width: 550px
+        .bg
+            width: 95%
+            margin-left: 30px
+            max-width: 550px
+        .ill
+            max-width: 1000px
+            position: absolute
+            top: 0
+            right: 0
+        .left-content
+            width: 100%
+            max-width: 500px
+            margin-left: 50px
+
     .analytics
         padding: 78px 0 58px 0
         display: flex
@@ -72,6 +97,12 @@
             padding: 58px 0 34px 0
             .products-subtitle
                 font-size: 18px
+
+        .engage
+            gap: 400px
+            .ill
+                width: 900px        
+
         .analytics
             // padding: 80px 0 60px 0
             .content
@@ -82,11 +113,13 @@
 
 @media screen and (max-width: 1440px)
     .product-page
-        .generate
+        .engage
+            gap: 300px
             .bg
-                max-width: 620px
+                margin-left: 100px
+                max-width: 450px
             .ill
-                max-width: 600px
+                width: 700px       
         .analytics
             .analytics-img
                 max-width: 500px
