@@ -39,7 +39,7 @@
         // position: relative
         // gap: 500px
         // top: -70px
-        margin-top: -70px
+        margin-top: -100px
         padding-bottom: 70px
         .right-content
             position: relative
@@ -59,7 +59,7 @@
         .left-content
             width: 100%
             max-width: 500px
-            margin: 0 50px
+            margin: 0 27px
 
     .analytics
         padding: 78px 0 58px 0
@@ -103,9 +103,10 @@
                 font-size: 18px
 
         .engage
-            gap: 400px
+            .bg
+                max-width: 450px
             .ill
-                width: 900px
+                width: 850px
 
         .analytics
             // padding: 80px 0 60px 0
@@ -115,19 +116,28 @@
             .analytics-img
                 // max-width: 612px
 
+
 @media screen and (max-width: 1440px)
     .product-page
         .engage
-            gap: 300px
+            margin-top: 0
             .bg
                 margin-left: 100px
                 max-width: 450px
             .ill
-                width: 700px
+                width: 800px
         .analytics
             .analytics-img
                 max-width: 500px
 
+@media screen and ( max-width: 1300px )
+    .product-page
+        .engage
+            .bg
+                max-width: 300px
+            .ill
+                width: 600px
+            
 @media screen and ( max-width: 1100px )
     .product-page
         .section-title
@@ -147,6 +157,23 @@
                 position: absolute
                 left: -20px
                 top: 50px
+
+        .engage
+            flex-direction: column-reverse
+            width: 100%
+            padding-bottom: 56px
+            .left-content
+                padding: 0 27px
+            .right-content
+                margin-top: 70px
+                max-width: 100%
+            .bg
+                width: 50%
+                max-width: 300px
+                margin-bottom: 32px
+            .ill
+                width: 100%
+                max-width: 600px
 
         .products
             padding: 47px 0 44px 0
