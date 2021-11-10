@@ -171,6 +171,12 @@
                 max-width: 500px
                 margin-left: 40px
 
+@media only screen and (max-width: 1440px) and (min-width: 1181px)
+    .home
+        .hero
+            .content
+                margin-top: 100px
+
 @media only screen and (max-width: 1180px)
     .home
         .title
@@ -182,6 +188,7 @@
             text-align: center
         .hero
             flex-direction: column
+            padding-bottom: 60px
             .content
                 margin-left: 0
                 display: flex
@@ -232,6 +239,7 @@
 
         .degree
             flex-direction: column-reverse
+            padding-bottom: 60px
             .ill-wrap
                 align-self: flex-start
                 width: 90%
@@ -244,6 +252,10 @@
 
 @media only screen and (max-width: 500px)
     .home
+        .hero
+            .ill
+                width: 100%
+                right: -26px
         .used-by
             padding: 0 0 134px 0
             .logos-container
@@ -256,3 +268,9 @@
 
         .funnel
             padding-bottom: 24px
+
+@media only screen and (max-width: 400px)
+    .home
+        .funnel
+            .title
+                padding: 0 20px
