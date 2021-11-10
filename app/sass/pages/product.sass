@@ -36,9 +36,6 @@
         display: flex
         align-items: center
         justify-content: flex-end
-        // position: relative
-        // gap: 500px
-        // top: -70px
         margin-top: -100px
         padding-bottom: 70px
         .right-content
@@ -47,6 +44,8 @@
             max-width: 1000px
             display: flex
             justify-content: flex-end
+        .section-title
+            max-width: 400px
         .bg
             width: 95%
             margin-left: 30px
@@ -59,7 +58,7 @@
         .left-content
             width: 100%
             max-width: 500px
-            margin: 0 27px
+            margin: 0 130px 0 20px
 
     .analytics
         padding: 78px 0 58px 0
@@ -70,7 +69,7 @@
             width: 100%
             max-width: 820px
         .content
-            margin: 0 10px 0 150px
+            margin: 0 10px 0 180px
             max-width: 611px
         .section-descr
             max-width: 500px
@@ -109,30 +108,32 @@
                 width: 850px
 
         .analytics
-            // padding: 80px 0 60px 0
             .content
                 max-width: 500px
-                // margin-left: 50px
-            .analytics-img
-                // max-width: 612px
-
 
 @media screen and (max-width: 1440px)
     .product-page
         .generate
             margin-bottom: 75px
             .left-content
-                max-width: 650px  
+                max-width: 650px
         .engage
             margin-top: 0
+            .left-content
+                max-width: 550px
+                margin: 0 100px 0 130px
+            .section-title
+                max-width: initial
             .bg
                 margin-left: 100px
                 max-width: 400px
             .ill
                 width: 750px
         .analytics
+            .content
+                margin: -40px 10px 0 70px
             .analytics-img
-                max-width: 500px
+                max-width: 700px
 
 @media screen and ( max-width: 1300px )
     .product-page
@@ -141,7 +142,7 @@
                 max-width: 300px
             .ill
                 width: 600px
-            
+
 @media screen and ( max-width: 1100px )
     .product-page
         .section-title
