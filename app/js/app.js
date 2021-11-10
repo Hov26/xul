@@ -20,11 +20,13 @@ $(document).ready(function() {
   // Open mobile menu
   $('.burger').click(function(){
     $('.mobile-menu').addClass('opened')
+    $('body').addClass('scroll-off')
   })  
 
   // Close mobile menu
   $('.close-btn').click(function(){
     $('.mobile-menu').removeClass('opened')
+    $('body').removeClass('scroll-off')
   })
   
 });
