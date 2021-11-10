@@ -40,4 +40,44 @@
         top: 50%
         transform: translateY(-50%)
     .create-account
-        margin: 108px 0 50px 0
+        margin: 108px 0 24px 0
+
+@media only screen and ( max-width: 1600px )
+    .login-page
+        overflow: hidden
+        .ill
+            &.left
+                left: -420px
+                bottom: -323px
+            &.right
+                top: initial
+                bottom: 30px
+                right: -100px
+
+@media screen and (max-width: 1440px)
+    .login-page
+        .title
+            font-size: 36px
+
+@media screen and (max-width: 1180px)
+    .login-page
+        height: calc(100vh - 80px)
+        .login-wrap
+            max-width: 372px
+        .ill
+            display: none
+
+@media screen and (max-width: 767px)
+    .login-page
+        display: flex
+        padding-top: 40px
+        .login-wrap
+            max-width: 327px
+            display: flex
+            flex-direction: column
+        .title
+            font-size: 30px
+        .form
+            margin-top: 40px
+        .create-account
+            margin-top: auto
