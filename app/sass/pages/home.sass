@@ -1,0 +1,77 @@
+.home
+    .hero
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding-bottom: 132px
+        .content
+            width: 100%
+            max-width: 662px
+            margin-left: 40px
+            @media only screen and (min-width: 2000px)
+                margin-right: 10vw
+        .title
+            margin-bottom: 22px
+        .subtitle
+            max-width: 472px
+        .input-btn-wrapper
+            margin: 22px 0 28px 0
+            max-width: 300px
+        .logos-title
+            margin-bottom: 18px
+        .logos-wrap
+            gap: 20px
+            .logo
+                height: 24px
+        .ill-wrap
+            width: 94%
+            max-width: 992px
+            position: relative
+            overflow: hidden
+        .bg
+            width: 100%
+            &.mobile
+                display: none
+        .ill
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -60px
+            width: 100%
+            max-width: 1000px
+
+@media only screen and ( max-width: 1440px )
+    .home
+        .hero
+            .content
+                max-width: 500px
+                margin-bottom: 33px
+            .title
+                font-size: 36px
+            .subtitle
+                font-size: 18px
+
+@media only screen and ( max-width: 1180px )
+    .home
+        .hero
+            flex-direction: column
+            .content
+                margin-left: 0
+                padding: 0 24px
+                text-align: center
+                display: flex
+                flex-direction: column
+                align-items: center
+            .title
+                font-size: 30px
+            .subtitle
+                font-size: 16px
+            .ill-wrap
+                align-self: flex-end
+            .ill
+                width: 114%
+            .bg
+                &.desktop
+                    display: none
+                &.mobile
+                    display: block

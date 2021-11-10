@@ -17,17 +17,14 @@ $(document).ready(function() {
     }
   })
 
-
+  // Open mobile menu
   $('.burger').click(function(){
     $('.mobile-menu').addClass('opened')
-    // if($('.mobile-menu-opened').hasClass('opened')) {
-    //   $('.mobile-menu').removeClass('opened')
-    // } else {
-    //   $('.mobile').addClass('opened')
-    // }
   })  
 
-  // $('.close').click(function(){
-  //   $('.mobile-menu').removeClass('opened')
-  // })
+  // Close mobile menu
+  $('.close-btn').click(function(){
+    $('.mobile-menu').removeClass('opened')
+  })
+  
 });

@@ -6,6 +6,8 @@ body
 button
     background: none
     padding: 0
+    border: none
+    cursor: pointer
 
 .container
     width: 95%
@@ -31,14 +33,20 @@ button
     &.white
         background-color: $white
         color: $blue100
+        &:hover
+            background-color: $gray
     &.blue
         background-color: $blue400
         color: $white
-
+        &:hover
+            background-color: #253BE8
+    &.transparent
+        background: transparent
     &.default
         padding: 0 47px
     &.signup
         padding: 0 60px
+
 
 // ul li with done green icon
 .done-list-ul
@@ -54,3 +62,25 @@ button
             left: 0
     .done-list-li:not(:last-child)
         margin-bottom: 20px
+
+.input-btn-wrapper
+    width: 100%
+    max-width: 372px
+    margin: 0 auto
+    .email-input
+        height: 48px
+        border-radius: 12px
+        width: 100%
+        display: block
+        border: 1px solid $gray200
+        margin: 0 auto
+        padding: 0 16px
+        color: $black100
+        &::placeholder
+            font-size: 16px
+            color: $gray100
+            font-weight: 400
+    .btn
+        width: 100%
+        margin-top: 16px
+
