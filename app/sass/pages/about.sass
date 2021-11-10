@@ -22,6 +22,27 @@
             border-radius: 24px
             box-shadow: 6px 8px 23px -1px rgba(0,0,0,0.36)
 
+.values
+    padding: 100px 0 50px 0
+    margin-top: -80px
+    .content-wrapper
+        display: flex
+        align-items: center
+        gap: 70px
+    .right-content
+        width: 50%
+        max-width: 572px
+        margin-right: 20px
+    .values-title
+        margin-bottom: 21px
+    .values-descr
+        line-height: 21px
+    .values-descr:not(:last-child)
+        margin-bottom: 20px
+    .values-list
+        padding: 0 0 0 22px
+
+
 @media screen and ( max-width: 1440px )
     .hero
         .container
@@ -40,6 +61,28 @@
         .hero-img
             .notebook
                 max-width: 472px
+
+    .values
+        gap: 15px
+        height: 600px
+        position: relative
+        z-index: -1
+        .content-wrapper
+            gap: 15px
+            position: absolute
+            left: 0
+            bottom: -120px
+        .values-title
+            font-size: 36px
+            margin-bottom: 24px
+        .right-content
+            margin-right: 20px
+            margin-bottom: 80px
+
+@media screen and ( max-width: 1200px )
+    .hero
+        .content
+            margin-bottom: 80px
 @media screen and ( max-width: 1100px )
     .hero
         .container
@@ -49,14 +92,26 @@
         .content
             width: 100%
             text-align: center
+            margin-bottom: 0px
         .hero-img
             width: 100%
-            max-width: 327px
         .hero-title
             font-size: 30px
             margin-bottom: 22px
         .hero-descr
             font-size: 16px
             line-height: 19px
-               
+
+    .values
+        .content-wrapper
+            flex-direction: column-reverse
+            left: 0
+            top: 0
+            bottom: unset
+
+
+@media screen and ( max-width: 900px )
+    .hero
+        .hero-img
+            max-width: 372px             
     
