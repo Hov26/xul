@@ -1,0 +1,114 @@
+@import '../colors.sass'
+
+.contact-page
+    .contact-container
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding: 100px 0 174px 0
+        // height: calc(100vh - 100px)
+        // @media screen and (max-width: 1180px)
+        //     height: calc(100vh - 80px)
+        .content
+            width: 100%
+            max-width: 527px
+            margin-right: 68px
+            margin-left: 134px
+        .main-title 
+            margin-top: 40px
+        .subTitle 
+            margin: 30px 0 70px 0
+        .group
+            margin-bottom: 30px
+            .title
+                margin-bottom: 16px
+            .group-link
+
+        .form-side
+            width: 100%
+            height: 688px
+            display: flex
+            max-width: 972px
+            min-width: 818px
+            position: relative
+            .bg
+                width: 100%
+        .form
+            position: absolute
+            top: 60px
+            left: 190px
+            width: 100%
+            max-width: 458px
+        .form-group
+            margin-bottom: 26px
+        .label
+            margin-bottom: 14px
+            display: block
+            margin-left: 12px
+        .input
+            width: 100%
+            height: 45px
+            padding: 0 10px
+            background: rgba(255, 255, 255, 0.3)
+            border-radius: 8px
+            border: none
+        .textarea
+            background: rgba(255, 255, 255, 0.3)
+            border-radius: 8px
+            border: none
+            min-height: 118px
+            resize: none
+            width: 100%
+        .btn
+            width: 100%
+        
+    
+@media screen and (max-width: 1440px)
+    .contact-page
+        .contact-container
+            padding: 56px 0 120px 0
+            .content
+                max-width: 450px
+            .main-title
+                font-size: 36px
+            .subTitle
+                font-size: 18px
+                margin: 16px 0 90px 0
+
+@media screen and (max-width: 1400px)
+    .contact-page
+        .contact-container
+            .content
+                margin-left: 5vw
+
+@media screen and (max-width: 1180px)
+    .contact-page
+        .contact-container
+            width: 100%
+            // margin: 0 auto
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 0
+            .content
+                text-align: center
+                margin: 0 0 36px 0
+                padding: 0 24px
+            .subTitle
+                margin: 22px 0 50px 0
+            .group
+                margin-bottom: 24px
+                .title
+                    margin-bottom: 8px
+            .form-side
+                min-width: initial
+                background: linear-gradient(221.05deg, #BC85FF 0%, #1F49FF 100%)
+                max-width: initial
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 40px 24px 100px 24px
+                .bg
+                    display: none
+                .form
+                    position: initial
