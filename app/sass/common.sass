@@ -93,3 +93,27 @@ button
     .btn
         width: 100%
         margin-top: 16px
+
+
+.square
+    background-color: $gray
+    border-radius: 32px
+    position: absolute
+    z-index: -1
+    &.square-1
+        height: 217px
+        width: 166px
+        bottom: 30%
+        left: 10%
+    &.square-2
+        height: 217px
+        width: 271px
+        bottom: 15%
+        right: 10%
+    @media only screen and (max-width: 1440px)
+        &.square-1
+            bottom: 20%
+        &.square-2
+            bottom: 6%
+    @media only screen and (max-width: 1300px)
+        display: none
