@@ -1,116 +1,135 @@
-.hero
-    padding-top: 40px
-    .container
-        display: flex
-        justify-content: flex-start
-        align-items: center
-        gap: 93px
-        max-width: 1276px
-    .content
-        width: 50%
-        max-width: 572px
-        margin-top: -100px
-    .hero-title
-        margin-bottom: 30px
-    .hero-descr:not(:last-child)
-        margin-bottom: 20px
-    .hero-figure
-        width: 60%
-        max-width: 504px
-        position: relative
-        padding-top: 47%
-    .hero-img
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        left: 
-        object-fit: cover
-        border-radius: 24px
-        box-shadow: 6px 8px 23px -1px rgba(0,0,0,0.36)
+.about-page
+    .hero
+        padding-top: 40px
+        .container
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            gap: 93px
+            max-width: 1276px
+        .content
+            width: 50%
+            max-width: 572px
+            margin-top: -100px
+        .hero-title
+            margin-bottom: 30px
+        .hero-descr:not(:last-child)
+            margin-bottom: 20px
+        .hero-figure
+            width: 60%
+            max-width: 504px
+            position: relative
+            padding-top: 47%
+        .hero-img
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 
+            object-fit: cover
+            border-radius: 24px
+            box-shadow: 6px 8px 23px -1px rgba(0,0,0,0.36)
 
-.values
-    padding: 100px 0 50px 0
-    margin-top: -80px
-    .content-wrapper
-        display: flex
-        align-items: center
-        gap: 70px
-    .right-content
-        width: 50%
-        max-width: 572px
-        margin-right: 20px
-    .values-title
-        margin-bottom: 21px
-    .values-descr
-        line-height: 21px
-    .values-descr:not(:last-child)
-        margin-bottom: 20px
-    .values-list
-        padding: 0 0 0 22px
+    .values
+        padding: 100px 0 50px 0
+        margin-top: -80px
+        .content-wrapper
+            display: flex
+            align-items: center
+            gap: 70px
+        .right-content
+            width: 50%
+            max-width: 572px
+            margin-right: 20px
+        .values-title
+            margin-bottom: 21px
+        .values-descr
+            line-height: 21px
+        .values-descr:not(:last-child)
+            margin-bottom: 20px
+        .values-list
+            padding: 0 0 0 22px
 
 
 @media screen and ( max-width: 1440px )
-    .hero
-        .container
-            width: 100%
-            justify-content: space-between
-            max-width: 1440px
-            padding: 0 134px
-        .hero-title
-            font-size: 36px
-            margin-bottom: 16px
-        .hero-descr:not(:last-child)
-            margin-bottom: 15px
-        .hero-descr
-            font-size: 18px
-            line-height: 21px
+    .about-page 
+        .hero
+            .container
+                width: 100%
+                justify-content: space-between
+                max-width: 1440px
+                padding: 0 134px
+            .hero-title
+                font-size: 36px
+                margin-bottom: 16px
+            .hero-descr:not(:last-child)
+                margin-bottom: 15px
+            .hero-descr
+                font-size: 18px
+                line-height: 21px
+            
 
-    .values
-        gap: 15px
-        position: relative
-        z-index: -1
-        .content-wrapper
+        .values
+            padding: 80px 0 40px 0
             gap: 15px
-        .values-title
-            font-size: 36px
-            margin-bottom: 24px
-        .right-content
-            margin-right: 20px
-            margin-bottom: 80px
+            z-index: -1
+            .content-wrapper
+                gap: 15px
+            .values-title
+                font-size: 36px
+                margin-bottom: 24px
+            .right-content
+                margin-right: 20px
+                width: 100%
+                padding: 0 24px
 
 @media screen and ( max-width: 1200px )
-    .hero
-        .content
-            margin-bottom: 80px
+    .about-page    
+        .hero
+            .content
+                margin-bottom: 80px
 
 @media screen and ( max-width: 1100px )
-    .hero
-        .container
-            flex-direction: column
-            padding: 0 24px
-            gap: 40px
-        .content
-            width: 100%
-            text-align: center
-            margin-bottom: 0px
-        .hero-figure
-            width: 100%
-        .hero-title
-            font-size: 30px
-            margin-bottom: 22px
-        .hero-descr
-            font-size: 16px
-            line-height: 19px
+    .about-page
+        .hero
+            .container
+                flex-direction: column
+                padding: 0 24px
+                gap: 40px
+            .content
+                width: 100%
+                text-align: center
+                margin-bottom: 0px
+            .hero-figure
+                width: 100%
+            .hero-title
+                font-size: 30px
+                margin-bottom: 22px
+            .hero-descr
+                font-size: 16px
+                line-height: 19px
 
-    .values
-        margin-top: -300px
-        padding: 450px 0 50px 0
-        .content-wrapper
-            flex-direction: column-reverse
-
+        .values
+            margin-top: -300px
+            padding: 400px 0 80px 0
+            .content-wrapper
+                flex-direction: column-reverse
+                align-items: flex-start
+            .right-content
+                margin: 0 auto
+            .values-bg
+                max-width: 100%
+           
 @media screen and ( max-width: 900px )
-    .hero
-        .hero-figure
-            max-width: 372px             
-    
+    .about-page
+        .hero
+            .hero-figure
+                max-width: 372px    
+
+
+                    
+        
+
+
+        
+        
