@@ -12,7 +12,7 @@
         justify-content: center
         align-items: center
         margin: 0 auto
-        padding: 73px 0 50px 0
+        padding: 73px 0 82px 0
         gap: 30px
     .switcher
         cursor: pointer
@@ -42,8 +42,23 @@
         align-items: center
         .term
             margin-right: 19px
-    .sale
-        padding: 15px
+    .enter-term
+        position: relative
+    .sale-wrap
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+        .sale
+            position: relative
+        .arrow-icon
+            width: 40px
+            position: absolute
+            top: -19px
+            right: -45px
 
     .pricing-cards
         display: flex
@@ -97,6 +112,8 @@
         .monthly
             .term
                 margin-right: 35px
+        .sale-wrap
+            bottom: 22px
 
 @media screen and (max-width: 1023px)
     .pricing
@@ -110,7 +127,7 @@
             font-size: 16px
         .enter-term
             align-items: baseline
-            padding: 40px 0 30px 0
+            padding: 40px 0 60px 0
             gap: 24px
             .switcher
                 width: 96px
@@ -137,3 +154,6 @@
                 padding: 45px 0 32px 0
             .card-free-btn
                 max-width: 221px
+        .sale-wrap 
+            .arrow-icon
+                right: -65px
