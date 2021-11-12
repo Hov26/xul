@@ -3,6 +3,7 @@
 .login-page
     height: calc(100vh - 100px)
     position: relative
+    overflow: hidden
     .ill
         position: absolute
         &.left
@@ -54,6 +55,18 @@
                 margin-top: 60px
             .divider
                 margin: 40px 0
+        .ill
+            &.left
+                left: -100px
+                transform: rotate(-11deg) translate(-160px, 10px) 
+                bottom: 0
+            &.right
+                max-width: 620px
+                transform: rotate(127deg)
+                top: initial
+                bottom: -295px
+                right: -102px
+
 
 @media only screen and ( max-width: 1600px )
     .login-page
@@ -78,6 +91,11 @@
                     font-size: 14px
                 .form
                     margin-top: 30px
+            .ill
+                &.left
+                    transform: rotate(-11deg) translate(-240px,10px)
+                &.right
+                    right: -200px
 
 @media screen and (max-width: 1180px)
     .login-page
