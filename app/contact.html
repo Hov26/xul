@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pricing</title>
+    <title>Login page</title>
     <meta name="description" content="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
                         <a href="product.html" class="fz15 fwb ws c-black100">product</a>
                     </li>
                     <li class="nav-li">
-                        <a href="pricing.html" class="fz15 fwb ws c-black100 active">pricing</a>
+                        <a href="pricing.html" class="fz15 fwb ws c-black100">pricing</a>
                     </li>
                     <li class="nav-li">
                         <a href="about.html" class="fz15 fwb ws c-black100">about</a>
@@ -87,90 +87,48 @@
             </div>
         </div>	
     </header>
-    <main class="pricing-page">
-        <section class="pricing">
-            <div class="container">
-                <h3 class="pricing-title fz50 c-black100 geo">Start your <span class="c-blue100">free trial</span></h3>
-                <p class="pricing-subtitle fz20 c-black ws">Unlimited users. No credit card needed</p>
-                <div class="enter-term">
-                    <div class="monthly">
-                        <p class="term fz18 fw600 ws">Monthly</p>
-                        <button class="switcher" aria-label='price switcher button'>
-                            <div class="circle"></div>
-                        </button>
-                    </div>
-                    <div class="yearly">
-                        <p class="term fz18 fw600 ws">Yearly</p>
-                    </div>
-                    <div class="sale-wrap">
-                        <div class="sale">
-                            <div class="fz16 fwb c-blue100 ws">5% off</div>
-                            <img src="images/arrow-icon.svg" alt="arrow" class="arrow-icon">
-                        </div>
-                    </div>
+    <main class="contact-page">
+        <section class="contact-container">
+            <div class="content">
+                <h1 class="main-title fz50 geo c-black100">Contact us</h1>
+                <h2 class="subTitle fz20 fw300 c-black100 ws">We'd love to hear from you! Drop us a line if you have any questions.</h2>
+                <div class="group">
+                    <p class="fz24 fwb c-black ws title">Phone</p>
+                    <a href="tel:+442343242" class="group-link fz20 fw300 c-black 300 ws">+44 234 3242</a>
+                </div>
+                <div class="group">
+                    <p class="fz24 fwb c-black ws title">Email</p>
+                    <a href="mailto:info@xul.co" class="group-link fz20 fw300 c-black 300 ws">info@xul.co</a>
+                </div>
+                <div class="group">
+                    <p class="fz24 fwb c-black ws title">Address</p>
+                    <address class="address group-link fz20 fw300 c-black 300 ws" >75 E. Santa Clara St., Floor 6 San Jose, CA 95113</address>
                 </div>
             </div>
-    
-            <div class="container">
-                <div class="pricing-cards">
-                    <div class="pricing-card bg-gray300">
-                        <p class="card-title fz24 fwb c-black100 geo">Standard</p>
-                        <p class="card-price fz60 fw600 c-black100 ws">$ 10.00</p>
-                        <p class="card-subtitle fz16 c-black ws">Annually</p>
-                        <a href="#" class="btn blue card-free-btn fz16 c-white">Try for free</a>
-                        <p class="card-descr fz20 c-black ws">Unlimited forms</p>
-                        <p class="card-descr fz20 c-black ws">Unlimited deals</p>
-                        <p class="card-descr fz20 c-black ws">Unlimited contacts</p>
-                        <p class="card-descr fz20 c-black ws">Gmail integration</p>
-                        <p class="card-descr fz20 c-black ws">Self-hosted forms</p>
-                        <p class="card-descr fz20 c-black ws">Email templates</p>
-                        <p class="card-descr fz20 c-black ws">One user seat</p>
-                        <p class="line-through card-descr fz20 c-black ws">Add additional users Add-ons</p>
+            <div class="form-side">
+                <img src="images/contact-bg.png" alt="illustration" class="bg" aria-hidden='true'>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name" class="label fz14 fw600 ws c-white">First Name</label>
+                        <input type="text" class="input" id="name">
+                        <p class="error-msg show fz14 ws">Please type your name</p>
                     </div>
-                    <div class="pricing-card with-bg bg-gray300">
-                        <p class="card-title fz24 fwb c-black100 geo">Pro</p>
-                        <p class="card-price  fz60 fw600 c-black100 ws">$ 39.00</p>
-                        <p class="card-subtitle fz16 c-black ws">Annually</p>
-                        <a href="#" class="btn white card-free-btn fz16 c-white">Try for free</a>
-                        <p class="card-descr fz20 c-black ws">Unlimited forms</p>
-                        <p class="card-descr fz20 c-black ws">Unlimited deals</p>
-                        <p class="card-descr fz20 c-black ws">Unlimited contacts</p>
-                        <p class="card-descr fz20 c-black ws">Gmail integration</p>
-                        <p class="card-descr fz20 c-black ws">Self-hosted forms</p>
-                        <p class="card-descr fz20 c-black ws">Email templates</p>
-                        <p class="card-descr fz20 c-black ws">One user seat</p>
-                        <p class="card-descr fz20 c-black ws">Add additional users</p>
-                        <p class="card-descr fz20 c-black ws">Add-ons</p>
+                    <div class="form-group">
+                        <label for="lastName" class="label fz14 fw600 ws c-white">Last Name</label>
+                        <input type="text" class="input" id="lastName">
                     </div>
-                    <div class="pricing-card enterprise bg-gray300">
-                        <p class="card-title fz24 fwb c-black100 geo">Enterprise</p>
-                        <p class="card-price fz60 fw600 c-black100 ws">$ 20.00</p>
-                        <p class="card-subtitle fz16 c-black ws">PER USER</p>
-                        <p class="card-subtitle fz16 c-black ws">Annually</p>
-                        <a href="#" class="btn blue card-free-btn fz16 c-white">Try for free</a>
-                        <p class="card-descr fz16 fw400 line-height-19 c-black100 ws">
-                            Add additional team 
-                            members to collaborate 
-                            and track progress.
-                        </p>
-                        <p class="card-descr fz16 fw400 line-height-19 c-gray100 ws">This add-on is only available with a Pro plan.</p>
-                    </div>            
-                </div>
-            </div>
-        </section>
-        <section class="sign-up">
-            <div class="square square-1"></div>
-            <div class="square square-2"></div>
-            <div class="container">
-                <p class="sign-up-title c-black100 fz50 fwb geo c-black100">
-                    Sign up now, <span class="c-blue100"> start your free 14-day trial</span>, and try out our fully-featured 
-                    platform with an unlimited number of deals.
-                </p>
-                <p class="sign-up-subtitle fz18 ws c-black100">No commitment or credit cards required.</p>
-                <div class="input-btn-wrapper">
-                    <input type="text" name="email" class="email-input btn" placeholder="Enter your email address">
-                    <button class="btn fz16 blue">START FREE 14-DAY TRIAL</button>
-                </div>
+                    <div class="form-group">
+                        <label for="email" class="label fz14 fw600 ws c-white">Email Address</label>
+                        <input type="text" class="input" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="msg" class="label fz14 fw600 ws c-white">Message</label>
+                        <textarea name="" id="msg" class="textarea"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn default send-btn black">Send</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -252,7 +210,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
