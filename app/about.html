@@ -14,9 +14,77 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-container">
+            <button class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <a href="#" class="logo-link fz37 c-black100 fwb">XUL</a>
+            <nav class="header-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#" class="fz15 fwb ws c-black100">product</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#" class="fz15 fwb ws c-black100">pricing</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#" class="fz15 fwb ws c-black100">about</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="#" class="fz15 fwb ws c-black100">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="#" class="fz15 fwb ws c-black100">pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-login">
+                <a href="#" class="login fz15 fwb ws c-black100">LOGIN</a>
+            </div>
+            <div class="header-login">
+                <a href="#" class="login fz15 fwb ws c-black100">LOGIN</a>
+                <a class="btn black signup">SIGN UP</a>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-header">
+                <div class="close-btn c-white">&#10005</div>
+                <p class="mobile-logo fz37 fwb c-white">XUL</p>
+            </div>
+            <div class="mobile-menu-wrapper">
+                <nav class="mobile-nav-open">
+                    <ul class="mobile-ul-open ">
+                        <li class="mobile-li-open">
+                            <a href="#" class="fz45 fwb c-white geo">Product</a>
+                        </li>
+                        <li class="mobile-li-open">
+                            <a href="#" class="fz45 fwb c-white geo">Pricing</a>
+                        </li>
+                        <li class="mobile-li-open">
+                            <a href="#" class="fz45 fwb c-white geo">About us</a>
+                        </li>
+                        <li class="mobile-li-open">
+                            <a href="#" class="fz45 fwb c-white geo">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-login-open">
+                    <a href="#" class="btn fz19 black">SIGN UP</a>
+                    <a href="#" class="btn fz19 black transparent">LOGIN</a>
+                </div>
+            </div>
+        </div>	
+    </header>
     <main class="about-page">
         <section class="hero">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="content">
                     <p class="section-title hero-title fz50 fwb geo c-black100">Who We Are</p>
                     <p class="section-subtitle hero-descr fz20 fw300 ws c-black100">
@@ -32,12 +100,14 @@
                         of working smarter AND harder. How? Through the power of intelligent automation.
                     </p>
                 </div>
-                <figure class="hero-figure">
-                    <img src="./images/notebook.png" alt="notebook" class="hero-img">
-                </figure>
-            </div>
+                <div class="figure-wrapper">
+                    <figure class="hero-figure">
+                        <img src="./images/notebook.png" alt="notebook" class="hero-img">
+                    </figure>
+                </div>
+            <!-- </div> -->
         </section>
-        <section class="values bg-gray">
+        <section class="values bg-gray100">
             <div class="content-wrapper">
                 <div class="left-content">
                     <img src="./images/valuesBg.png" alt="values" class="values-bg">
@@ -61,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="work">
+        <section class="work hide">
             <img src="./images/bg 6.png" alt="background" class="work-bg">
             <div class="container">
                 <div class="work-content">
@@ -74,11 +144,13 @@
                     </p>
                 </div>
                 <div class="video-wrap">
-                    <iframe class="iframe" src="https://www.youtube.com/embed/GOmAXCUK_iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="iframe-wrap">
+                        <iframe class="iframe" src="https://www.youtube.com/embed/GOmAXCUK_iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="loyal">
+        <section class="loyal hide">
             <div class="loyal-square bg-gray"></div>
             <div class="left-content">
                 <p class="section-title fz50 fwb geo c-black100">Loyal customers from around <span class="c-blue100">the world</span></p>
@@ -93,7 +165,7 @@
                 <img src="./images/loyalCases.png" alt="loyal Cases" class="ill">
             </div>
         </section>
-        <section class="sign-up">
+        <section class="sign-up hide">
             <div class="square square-1"></div>
             <div class="square square-2"></div>
             <div class="container">
