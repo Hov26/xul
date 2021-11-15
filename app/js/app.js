@@ -9,6 +9,12 @@ $(document).ready(function() {
     }
   });
 
+  if ($(window).scrollTop() > 1) {
+    $('.header').addClass('with-bg')
+  } else {
+    $('.header').removeClass('with-bg')
+  }
+
   $('.switcher').click(function(){
     if ($(this).hasClass('active')) {
       $(this).removeClass('active')
