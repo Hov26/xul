@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
@@ -105,7 +106,7 @@
             <div class="ill-wrap">
                 <img src="images/hero-bg.png" alt="Illustration" class="bg desktop" aria-hidden='true'>
                 <img src="images/hero-bg-mobile.svg" alt="Illustration" class="bg mobile" aria-hidden='true'>
-                <img src="images/hero-ill.png" alt="Illustration" class="ill">
+                <img src="images/hero-ill.png" alt="Illustration" class="ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             </div>
         </section>
         <section class="used-by">
@@ -123,7 +124,7 @@
         <section class="funnel">
             <div class="ill-wrap">
                 <img src="images/funnel-bg.png" alt="Illustration" class="bg" aria-hidden='true'>
-                <img src="images/funnel-ill.png" alt="Illustration" class="ill">
+                <img src="images/funnel-ill.png" alt="Illustration" class="ill wow fadeIn" data-wow-offset="100" data-wow-delay="0.1s" data-wow-duration="3s">
             </div>
             <div class="content">
                 <h1 class="title fz50 fwb c-black100 geo">Create <span class="c-blue100">Funnel forms</span> to collect actionable data</h1>
@@ -139,14 +140,14 @@
             </div>
             <div class="ill-wrap">
                 <img src="images/loyal-bg.png" alt="Illustration" class="bg" aria-hidden='true'>
-                <img src="images/loyal-ill.png" alt="Illustration" class="ill desktop">
+                <img src="images/loyal-ill.png" alt="Illustration" class="ill desktop wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
                 <img src="images/loyal-ill-mobile.png" alt="Illustration" class="ill mobile">
             </div>
         </section>
         <section class="degree">
             <div class="ill-wrap">
                 <img src="images/degree-bg.png" alt="Illustration" class="bg" aria-hidden='true'>
-                <img src="images/degree-ill.png" alt="Illustration" class="ill">
+                <img src="images/degree-ill.png" alt="Illustration" class="ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             </div>
             <div class="content">
                 <h4 class="title fz50 fwb c-black100 geo">Get a <span class="c-blue100">360-degree</span> view of your business with <span class="c-blue100">comprehensive analytics</span></h4>
@@ -155,8 +156,8 @@
             </div>
         </section>
         <section class="sign-up">
-            <div class="square square-1"></div>
-            <div class="square square-2"></div>
+            <div class="square square-1 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s"></div>
+            <div class="square square-2 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s"></div>
             <div class="container">
                 <p class="sign-up-title c-black100 fz50 fwb geo c-black100">
                     Sign up now, <span class="c-blue100"> start your free 14-day trial</span>, and try out our fully-featured 
@@ -253,6 +254,10 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
