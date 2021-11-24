@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -105,14 +107,14 @@
             </div>
             <div class="figure-wrapper">
                 <figure class="hero-figure">
-                    <img src="./images/notebook.png" alt="notebook" class="hero-img">
+                    <img src="./images/notebook.png" alt="notebook" class="hero-img wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
                 </figure>
             </div>
         </section>
         <section class="values bg-gray">
             <div class="content-wrapper">
                 <div class="left-content">
-                    <img src="./images/valuesBg.png" alt="values" class="values-bg">
+                    <img src="./images/valuesBg.png" alt="values" class="values-bg wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
                 </div>
                 <div class="right-content">
                     <p class="section-title values-title fz50 fwb geo c-black100">Our values</p>
@@ -135,7 +137,7 @@
         </section>
         <section class="work ">
             <div class="square square-1" aria-hidden="true"></div>
-            <img src="./images/notification.svg" alt="notification" class="notification-ill" aria-hidden="true">
+            <img src="./images/notification.svg" alt="notification" class="notification-ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s" aria-hidden="true">
             <img src="./images/about-work-bg.png" alt="background illustration" class="work-bg" aria-hidden="true">
             <div class="container">
                 <div class="work-content">
@@ -165,7 +167,7 @@
             </div>
             <div class="right-content">
                 <img src="./images/about-loyal-bg.png" alt="create form" class="bg">
-                <img src="./images/loyalCases.png" alt="loyal Cases" class="ill">
+                <img src="./images/loyalCases.png" alt="loyal Cases" class="ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             </div>
         </section>
         <section class="sign-up">
@@ -265,6 +267,10 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
@@ -97,7 +98,7 @@
         <section class="generate">
             <div class="left-content">
                 <img src="./images/generate-bg.png" alt="create form" class="bg">
-                <img src="./images/createForm.png" alt="create form" class="ill">
+                <img src="./images/createForm.png" alt="create form" class="ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             </div>
             <div class="right-content">
                 <h4 class="section-title fz50 fwb geo c-black100">Generate Leads</h4>
@@ -144,11 +145,11 @@
             </div>
             <div class="right-content">
                 <img src="./images/engage-bg.png" alt="create form" class="bg">
-                <img src="./images/yourCase.png" alt="create form" class="ill">
+                <img src="./images/yourCase.png" alt="create form" class="ill wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             </div>
         </section>
         <section class="analytics bg-gray">
-            <img src="./images/yourAnalytics.png" alt="analytics review" class="analytics-img">
+            <img src="./images/yourAnalytics.png" alt="analytics review" class="analytics-img wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
             <div class="content">
                 <h4 class="section-title fz50 fwb geo c-black100">Measure Your Success</h4>
                 <ul class="done-list-ul">
@@ -255,6 +256,10 @@
     
     <script src="js/jquery.min.js"></script>
     <script src="js/app.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
